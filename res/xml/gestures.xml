@@ -153,4 +153,11 @@
             settings:requiresAction="org.lineageos.settings.device.GESTURE_SETTINGS">
         <intent android:action="org.lineageos.settings.device.GESTURE_SETTINGS" />
     </com.android.settings.custom.preference.RemotePreference>
+       
+    <com.OrchidOs.settings.preferences.SystemSettingSwitchPreference
+        android:key="volume_rocker_wake"
+        android:title="@string/volume_rocker_wake_title"
+        android:summary="@string/volume_rocker_wake_summary"
+        android:defaultValue="false"
+        android:disableDependentsState="true" />
 </PreferenceScreen>
