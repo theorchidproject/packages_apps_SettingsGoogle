@@ -49,4 +49,9 @@
         android:summary="%s"
         android:persistent="false" />
 
+         <com.epic.support.preferences.SystemSettingSwitchPreference
+            android:key="global_actions_onthego"
+            android:title="@string/global_actions_onthego_title"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
