@@ -25,7 +25,7 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="wifi_anim" 
         android:layout="@layout/wifi_animation"
-        android:order="-999"/>
+        android:order="-999" />
 
     <PreferenceCategory
         android:key="multi_network_header"
@@ -121,6 +121,7 @@
         android:title="@string/select_private_dns_configuration_title"
         android:icon="@drawable/ic_settings_private_dns"
         android:order="20"
+        android:visibility="invisible"
         android:dialogTitle="@string/select_private_dns_configuration_dialog_title"
         android:dialogLayout="@layout/private_dns_mode_dialog"
         android:positiveButtonText="@string/save"

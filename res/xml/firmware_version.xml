@@ -28,8 +28,8 @@
     android:layout="@layout/orchidosrom_grid"/>
 
   <com.android.settingslib.widget.LayoutPreference
-    android:key="pepsi_animation"
-    android:layout="@layout/pepsi_animation"
+        android:key="pepsi_animation"
+        android:layout="@layout/pepsi_animation" 
 		android:selectable="true"
 		settings:controller="com.android.settings.deviceinfo.firmwareversion.ElixirLogoPreferenceController"/>
 	

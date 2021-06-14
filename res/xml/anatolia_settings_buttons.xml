@@ -16,6 +16,60 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/buttons_title">
+	android:title="@string/app_info_config">
+
+
+       <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:layout="@layout/welcome_animation"
+        android:order="-180" />
+     
+
+ <!-- Custom headers -->
+    <PreferenceCategory
+        android:key="category_custom_header"
+        android:title="@string/custom_header_title">
+
+        <com.epic.support.preferences.SystemSettingSwitchPreference
+            android:key="status_bar_custom_header"
+            android:title="@string/status_bar_custom_header_title"
+            android:defaultValue="false" />
+
+
+        <ListPreference
+            android:key="daylight_header_pack"
+            android:title="@string/daylight_header_pack_title"
+            android:persistent="false"
+            android:dependency="status_bar_custom_header" />
+
+
+
+        <Preference
+            android:key="file_header_select"
+            android:title="@string/about_settings"
+            android:summary="@string/about_settings"
+            android:persistent="false"
+            android:dependency="status_bar_custom_header" >
+        </Preference>
+
+        <com.epic.support.preferences.CustomSeekBarPreference
+            android:key="status_bar_custom_header_shadow"
+            android:title="@string/about_settings"
+            android:summary="@string/about_settings"
+            android:max="100"
+            settings:min="0"
+            settings:unitsRight="@string/unit_percent"
+            android:persistent="false"
+            android:dependency="status_bar_custom_header" />
+
+    </PreferenceCategory>
+    
+  
+
+   <com.android.settingslib.widget.LayoutPreference        
+        android:key="sakura_settings"
+        android:layout="@layout/toplevel_bottom_animation"
+        android:selectable="false"
+        android:order="54" />
 
 </PreferenceScreen>

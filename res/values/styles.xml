@@ -537,9 +537,9 @@
     </style>
 
     <style name="Widget.SliceView.Panel">
-        <item name="titleSize">16sp</item>
+        <item name="titleSize">18sp</item>
         <item name="rowStyle">@style/SliceRow</item>
-        <item name="android:background">?android:attr/colorBackgroundFloating</item>
+        <item name="android:background">@*android:color/primary_device_default_light</item>
     </style>
 
     <style name="Widget.SliceView.Panel.Slider">
@@ -586,10 +586,10 @@
         <!-- 8dp end padding for the end item -->
         <item name="endItemEndPadding">8dp</item>
 
-        <item name="titleSize">20sp</item>
+        <item name="titleSize">18sp</item>
         <!-- Align text with slider -->
-        <item name="titleStartPadding">11dp</item>
-        <item name="subContentStartPadding">11dp</item>
+        <item name="titleStartPadding">16dp</item>
+        <item name="subContentStartPadding">16dp</item>
 
         <!-- Padding for indeterminate progress bar -->
         <item name="progressBarStartPadding">12dp</item>
@@ -947,18 +947,25 @@
 
     <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
         <item name="android:textSize">48sp</item>
-
+    </style>
+    
     <style name="OptionTitleTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
         <item name="android:textAlignment">center</item>
         <item name="android:textSize">15sp</item>
         <item name="android:lineHeight">15sp</item>
         <item name="android:textColor">?android:attr/textColorSecondary</item>
     </style>
+    
+        <!-- xd. Action Bar -->
+    <style name="xd_toolbar.Expanded" parent="xd_toolbar.Collapsed">
+        <item name="android:textSize">42dp</item>
+        <item name="android:textColor">@color/settingslib_text_color_primary_device_default</item>
+        <item name="android:fontFamily">@*android:string/config_headlineFontFamilyMedium</item>
+    </style>
 
-    <style name="OptionTitleTextAppearance" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
-        <item name="android:textAlignment">center</item>
-        <item name="android:textSize">15sp</item>
-        <item name="android:lineHeight">15sp</item>
-        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    <style name="xd_toolbar.Collapsed" parent="@android:style/TextAppearance.DeviceDefault.Widget.ActionBar.Title">
+        <item name="android:fontFamily">@string/settingslib_config_headlineFontFamily</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textColor">@color/settingslib_text_color_primary_device_default</item>
     </style>
 </resources>

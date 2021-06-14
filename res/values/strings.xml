@@ -13,12 +13,94 @@
      limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+   
+    <string name="one_handed_action_show_notification">one handed show notification</string>
+    <string name="connection_area">Connections</string>
+    <string name="system_personalization">Themes and Styles</string>
+    <string name="secure_hub">Its what I like</string>
+    <string name="Opensource_applications">Opensource applications</string>
+    <string name="Opensource_summary">Opensource secure apps</string>
+    <string name="category_system_options">Opensource Vpn and Adblocking</string>
+    <string name="foss_setting_description">Welcome to FOSS Settings below are options and information on ways to enhance your security and privacy while using your device. Please enjoy and stay safe.</string>
+    <string name="foss_bubble_setting_description">Welcome to FOSS Settings below are options and information on ways to enhance your security and privacy while using your device. Please enjoy and stay safe.</string>
 
+
+     <string name="Microg_info">Problem Applicaiton info</string>
+     <string name="Microg_info_description">Information on app-level problems and fixes</string>
+     <string name="Microg_link">https://github.com/microg/GmsCore/wiki/Problem-Apps</string>
+
+     <string name="Opensource">Open Source Applications</string>
+     <string name="Opensource_description">Opensource application list</string>
+     <string name="Opensource_link">https://github.com/LinuxCafeFederation/awesome-android</string>
+    <string name="app_info_config">App info and config</string>
+    <string name="core_system">Foss Settings</string>
+    <string name="security_privacy_center">Security and Privacy</string>
+    <string name="security_privacy_summary">Security, Privacy, Location, Accessibility, Notifications</string>
+    <string name="core_system_summary">Microg and Aurora system configuration</string>
+    <string name="Orchid_toplevel_settings_title">Its what I like</string>
+    <string name="Orchid_toplevel_settings_summary">Enjoy your freedom and control your data</string>
+    <string name="secure_hub_summary">Enjoy your freedom and control your data </string>
+    <string name="adaway_title">Adaway Settings</string>
+    <string name="adaway_summary">Opensouce Ad blocking software</string>
+    <string name="dns66_summary">Vpn and Dns protection</string>
+    <string name="dns66_title">Dns66 Services</string>
+    <string name="opensource_title">Privacy extras</string>
+    <string name="systemwebview_summary">System webview provider options</string>
+    <string name="systemwebview_title">System Webview</string>
+    <string name="riseup_summary">RiseupVPN</string>
+    <string name="riseup_title">Ethical vpn provider</string>
+
+    <string name="dwall_summary">Extra dark Wallpaper settings</string>
+    <string name="dwall_title">DarkMode WallPaper</string>
+    <string name="downto_summary">direct where to download to</string>
+    <string name="downto_title">Extra Downloader Settings</string>
+    <string name="quicktiles_summary">Extra Qs Settings</string>
+    <string name="quicktiles_title">QuickTiles</string>
+    <string name="aservices_summary">aurora system configurations</string>
+    <string name="aservices_title">Aurora Settings</string>
+    <string name="powermenu_title2">Power Menu options</string>
+    <string name="powermenu_title3">System dashdboard settings</string>
+
+    <string name="trans_title">Translate You</string>
+    <string name="trans_summary">Translate settings</string>
+
+    <string name="duress_title">Duress Aplication</string>
+    <string name="duress_summary">Duress trigger settings</string>
+    <string name="cloud_summary">System cloud services provider</string>
+    <string name="cloud_title">Rcx Cloud</string>
+    <string name="aon_title">AlwaysOn</string>
+    <string name="aon_summary">AlwaysOn system settings</string>
     <!-- OrchidOs versioning -->
-        
+    <string name="rice_customizations_title">System Custom</string>
+    <string name="rice_customizations_summary">system custom options</string>
+    <string name="menu_key_grimoire">System Custom</string>
+    <string name="atomichub_settings_title">PepsiOS</string>
+    <string name="storage_warning_internal">system custom options</string>
+    <string name="atomichub_settings_summary">PepsiOS</string>
+    <string name="bitwarden_summary">Bitwarden Password</string>
+    <string name="bitwarden_title">Bitwarden</string>
+    <string name="brair_title">Brair</string>
+    <string name="brair_summary">Brair messenger</string>
+    <string name="category_extra_ui_settings">Extra Ui settings</string>
 
+
+    <string name="microgs_title">Microg Settings</string>
+    <string name="microgs_summary">Foss system settings</string>
+    <string name="rethink_title">RethinkDns</string>
+    <string name="rethink_summary">Open Source Dns</string>
+    <string name="secure_warden_title">App Warden</string>
+    <string name="warden_summary">Protect system from trackers</string>
+    <string name="secure_webapps_title">Secure Browser</string>
+    <string name="webapp_summary">Secure webapps</string>
+    <string name="Allwayson_title">AlwaysOn</string>
+    <string name="translate_summary">Translation application</string>
+    <string name="translate_title">Translate You</string>
+    
+    <string name="statusbar_items_title">statusbar</string>
+    <string name="unlock_quick_unlock_control_summary">unlocking</string>
+    <string name="unlock_quick_unlock_control_title">un lock</string>
     <string name="wellbeing_title">Wellbeing</string>
-    <string name="OrchidOs_version_title">Gauguin</string>
+    <string name="OrchidOs_version_title">Device: Gauguin</string>
     <string name="OrchidOs_device_title">Qual: SM7225</string>
     <string name="OrchidOs_release_type_title">Snap: 750G</string>
     <string name="OrchidOs_maintainer_title">5G Enabled</string>
@@ -52,7 +134,7 @@
     <string name="battery_illustration_description">Monitor battery health, usage and improve battery usage.</string>
     <string name="connectivity_category_title">connectivity</string>
     <string name="navbar_gesture_custom">Navigation Gestures Customizations</string>
-    <string name="usercard_summary">Certified OrchidOs user</string>
+    <string name="usercard_summary">Certified PepsiOs user</string>
     
     <!-- About page -->
     <string name="battery">Battery</string>
@@ -64,7 +146,7 @@
     <string name="about_device_nearby">The device name can and will be seen by the nearby devices.</string>
     <string name="about_device_version_type_gapps">Pixel</string>
     <string name="about_device_version_type_vanilla">Vanilla</string>
-    <string name="version">OrchidOs version</string>
+    <string name="version">PepsiOs version</string>
     <string name="edit">Edit</string>
     <string name="device_name">Device name</string>
     <string name="about_us_info_category_title">About Us</string>
@@ -78,6 +160,9 @@
     <string name="doze_on_charge_title">Always on when charging</string>
     <string name="doze_on_charge_summary">Show doze screen all the time when charging</string>
 
+
+    <string name="security_settings_udfps_tip_fingerprint_help">OrchidOs Idle Manager</string>
+    <string name="security_settings_udfps_side_fingerprint_help">OrchidOs Idle Manager</string>
    <!-- Doze on double tap -->
     <string name="double_tap_title">Double tap</string>
     <string name="doze_double_tap_title">Double tap to check phone</string>
@@ -207,18 +292,18 @@
         <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from being a developer.</item>
     </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-    <string name="show_dev_on">Warning Dev Settings</string>
+    <string name="show_dev_on">Warning</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-    <string name="show_dev_already">Danger settings enabled.</string>
+    <string name="show_dev_already">Danger</string>
 
     <!-- [CHAR LIMIT=NONE] Toast message when user attemps to launch developer otions before enabling it. -->
-    <string name="dev_settings_disabled_warning">Danger!.</string>
+    <string name="dev_settings_disabled_warning">Blocked</string>
 
     <!-- Category headings in left-pane header menu --> <skip />
     <!-- Settings main menu category heading. Wireless and networks (Wi-Fi, Bluetooth, data usage...). [CHAR LIMIT=40] -->
     <string name="header_category_wireless_networks">Wireless &amp; networks</string>
     <!-- Settings main menu category heading. System (Updates, data, accessibility, about phone). [CHAR LIMIT=40] -->
-    <string name="header_category_system">Services</string>
+    <string name="header_category_system">System Services</string>
 
     <!-- Phone Info screen. Status label.  Used for diagnostic info screens, precise translation isn't needed -->
     <string name="radioInfo_service_in">In Service</string>
@@ -505,7 +590,7 @@
 
     <!-- Android debugging as root -->
     <string name="adb_enable_root">Rooted debugging</string>
-    <string name="adb_enable_summary_root">Allow running Android debugging as root</string>
+    <string name="adb_enable_summary_root">Allow running PepsiOs debugging as root</string>
 
     <!-- Backup Transport selection settings menu and activity title -->
     <string name="backup_transport_setting_label">Change backup provider</string>
@@ -515,8 +600,8 @@
     <string name="berry_black_theme_title">Pure black</string>
     <string name="berry_black_theme_summary">Pure black background for dark theme</string>
 
-    <!-- Device Info screen. LineageOS legal. -->
-    <string name="lineagelicense_title">LineageOS legal</string>
+    <!-- Device Info screen. PepsiOs legal. -->
+    <string name="lineagelicense_title">PepsiOsOS legal</string>
 
     <!-- Double tap to sleep on status bar or lockscreen -->
     <string name="status_bar_double_tap_to_sleep_title">Tap to sleep</string>
@@ -581,7 +666,7 @@
     <string name="high_touch_sensitivity_title">High touch sensitivity</string>
     <string name="high_touch_sensitivity_summary">Increase touchscreen sensitivity so it can be used while wearing gloves</string>
 
-    <!-- Hotspot lineage extras -->
+    <!-- Hotspot PepsiOs extras -->
     <string name="tethering_allow_vpn_upstreams_title">Allow clients to use VPNs</string>
     <string name="tethering_allow_vpn_upstreams_summary">Permit hotspot clients to use this device\u2019s VPN connections for upstream connectivity</string>
 
@@ -635,9 +720,9 @@
     <string name="peak_refresh_rate_summary_custom">Automatically raises the refresh rate from 60 to %1$d Hz for some content. Increases battery usage.</string>
 
     <!-- [CHAR_LIMIT=NONE] Display Settings: Title of the setting which enables overlays to customize headline and body fonts. -->
-    <string name="theme_customization_font_title">Font</string>
+    <string name="theme_customization_font_title">Font customizations</string>
     <!-- [CHAR_LIMIT=NONE] Display Settings: Title of the setting which enables overlays to customize the adaptive icon shape (e.g. launcher icons). -->
-    <string name="theme_customization_icon_shape_title">Icon shape</string>
+    <string name="theme_customization_icon_shape_title">Icon shape settings</string>
 
     <!-- Touchscreen gesture settings -->
     <string name="touchscreen_gesture_settings_title">Touchscreen gestures</string>
@@ -998,7 +1083,7 @@
     <!-- Description of how many characters are used in owner info [CHAR LIMIT=40]-->
     <string name="owner_info_settings_status"><xliff:g id="count" example="90">%1$d</xliff:g> / <xliff:g id="count" example="100">%2$d</xliff:g></string>
     <!-- Hint text shown in owner info edit text [CHAR LIMIT=50] -->
-    <string name="owner_info_settings_edit_text_hint">E.g., Joe\u2019s Android.</string>
+    <string name="owner_info_settings_edit_text_hint">E.g., Joe\u2019s PepsiOs.</string>
 
     <!-- Text shown next to checkbox for showing profile info on LockScreen [CHAR LIMIT=50]-->
     <string name="show_profile_info_on_lockscreen_label">Show profile info on lock screen</string>
@@ -1006,7 +1091,7 @@
     <!-- Main Settings screen setting option title for the item to take you to the Accounts screen [CHAR LIMIT=22] -->
     <string name="Accounts_settings_title">My Accounts</string>
     <!-- Main Settings screen setting option title for the item to take you to the location screen -->
-    <string name="location_settings_title">Location Settings</string>
+    <string name="location_settings_title">Device Location</string>
     <!-- Used in the location settings to control turning on/off the feature entirely [CHAR LIMIT=60] -->
     <string name="location_settings_primary_switch_title">Use location</string>
     <!-- Summary for Location settings when location is off [CHAR LIMIT=NONE] -->
@@ -1040,7 +1125,7 @@
     <!-- Main Settings screen setting option title for the item to take you to the accounts screen [CHAR LIMIT=22] -->
     <string name="account_settings_title">Personal</string>
     <!-- Main Settings screen setting option title for the item to take you to the security screen -->
-    <string name="security_settings_title">Security Hub</string>
+    <string name="security_settings_title">Security</string>
     <!-- Security Settings screen setting option title for the item to take you to the encryption and credential screen -->
     <string name="encryption_and_credential_settings_title">Encryption &amp; credentials</string>
     <!-- Security Settings screen Encryption and crendential summary -->
@@ -2318,7 +2403,7 @@
     <string name="bluetooth_max_connected_audio_devices_dialog_title">Select maximum number of connected Bluetooth audio devices</string>
 
     <!-- Wifi Display settings. The title of the screen. [CHAR LIMIT=40] -->
-    <string name="wifi_display_settings_title">Cast</string>
+    <string name="wifi_display_settings_title">Cast options</string>
     <!-- Wifi Display settings. The keywords of the setting. [CHAR LIMIT=NONE] -->
     <string name="keywords_wifi_display_settings">mirror</string>
     <!-- Wifi Display settings. The title of a menu item to enable wireless display [CHAR LIMIT=40] -->
@@ -2418,7 +2503,7 @@
     <string name="nfc_secure_toggle_summary" product="default">Allow NFC use only when screen is unlocked</string>
 
     <!-- Used to enter the Android Beam sharing preferences screen. This phrase is a trademark. [CHAR LIMIT=32] -->
-    <string name="android_beam_settings_title">Android Beam</string>
+    <string name="android_beam_settings_title">PepsiOs Beam</string>
     <!-- Used to describe the on state of the Android Beam feature [CHAR LIMIT=NONE] -->
     <string name="android_beam_on_summary">Ready to transmit app content via NFC</string>
     <!-- Used to describe the off state of the Android Beam feature [CHAR LIMIT=NONE] -->
@@ -2426,7 +2511,7 @@
     <!-- Used to describe the enabled state of the Android Beam feature when NFC, which it relies on, is turned off [CHAR LIMIT=NONE] -->
     <string name="nfc_disabled_summary">Unavailable because NFC is turned off</string>
     <!-- Used in the Android Beam sharing preferences screen. This phrase is a trademark. [CHAR LIMIT=32] -->
-    <string name="android_beam_label">Android Beam</string>
+    <string name="android_beam_label">PepsiOs Beam</string>
     <!-- Explanation of the Android Beam feature in the Android Beam settings panel. The use of "beam" here is as a verb and not considered trademarked. [CHAR LIMIT=NONE] -->
     <string name="android_beam_explained">When this feature is turned on, you can beam app content to another NFC-capable device by holding the devices close together. For example, you can beam web pages, YouTube videos, contacts, and more.\n\nJust bring the devices together (typically back to back) and then tap your screen. The app determines what gets beamed.</string>
 
@@ -2988,7 +3073,7 @@
     <!-- Summary Used to open the ssid and security dialog for Wifi Access Point.  [CHAR LIMIT=60] -->
     <string name="wifi_hotspot_configure_ap_text_summary">AndroidAP WPA2 PSK hotspot</string>
     <!-- Default access point SSID used for tethering -->
-    <string name="wifi_tether_configure_ssid_default">AndroidHotspot</string>
+    <string name="wifi_tether_configure_ssid_default">PepsiOsHotspot</string>
     <!-- Title for the panel of add Wi-Fi network from APP [CHAR LIMIT=50] -->
     <string name="wifi_add_app_single_network_title">Save this network?</string>
     <!-- Summary for the panel of add Wi-Fi network from APP [CHAR LIMIT=NONE] -->
@@ -3177,7 +3262,7 @@
     <string name="carrier">Carrier</string>
     <!-- Sound and alerts settings -->
     <skip/>
-    <string name="display_settings_title">Display</string>
+    <string name="display_settings_title">Display options</string>
     <!-- Sound settings screen heading -->
     <string name="sound_settings">Sound &amp; Vibration</string>
     <!-- DO NOT TRANSLATE Summary placeholder -->
@@ -3516,7 +3601,7 @@
     <!-- Wallpaper settings title [CHAR LIMIT=30] -->
     <string name="wallpaper_settings_title">Wallpaper</string>
     <!-- Styles & Wallpapers settings title [CHAR LIMIT=30] -->
-    <string name="style_and_wallpaper_settings_title">System style</string>
+    <string name="style_and_wallpaper_settings_title">Wallpapers</string>
     <!-- Summary for the top level wallpapers settings [CHAR LIMIT=NONE]-->
     <string name="wallpaper_dashboard_summary">Home, lock screen</string>
     <!-- Wallpaper settings summary when default wallpaper is used [CHAR LIMIT=NONE] -->
@@ -3686,11 +3771,11 @@
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
     <string name="firmware_version">Android Version</string>
 	    <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
-    <string name="firmware_version2">OrchidOs Version</string>
+    <string name="firmware_version2">PepsiOs Version</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
-    <string name="about_device_info">OrchidOs</string>
+    <string name="about_device_info">PepsiOs</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=60] -->
-    <string name="security_patch">Android security update</string>
+    <string name="security_patch">PepsiOs security update</string>
     <!-- About phone screen, status item label  [CHAR LIMIT=40] -->
     <string name="model_info">Model</string>
     <!-- About phone screen, dialog title for showing hardware information such as model, serial number, etc.[CHAR LIMIT=60] -->
@@ -4009,8 +4094,8 @@
     <!-- Body of dialog confirming that user wants to forget an internal storage device [CHAR LIMIT=NONE]-->
     <string name="storage_internal_forget_confirm">All the apps, photos, and data stored on this <xliff:g id="name" example="SD card">^1</xliff:g> will be lost forever.</string>
 
-    <!-- Body of dialog informing user about the storage used by the Android System [CHAR LIMIT=NONE]-->
-    <string name="storage_detail_dialog_system">System includes files used to run Android version <xliff:g id="version" example="8.0">%s</xliff:g></string>
+    <!-- Body of dialog informing user about the storage used by the PepsiOs System [CHAR LIMIT=NONE]-->
+    <string name="storage_detail_dialog_system">System includes files used to run PepsiOs version <xliff:g id="version" example="8.0">%s</xliff:g></string>
 
     <!-- Title of wizard step prompting user to setup a storage device [CHAR LIMIT=32] -->
     <string name="storage_wizard_init_title">Set up your <xliff:g id="name" example="SD card">^1</xliff:g></string>
@@ -4479,7 +4564,7 @@
     <string name="ethernet_tethering_subtext" product="default">Share phone\u2019s internet connection via Ethernet</string>
 
     <!-- Tethering footer info [CHAR LIMIT=NONE]-->
-    <string name="tethering_footer_info">Use hotspot and tethering to provide internet to other devices through your mobile data connection. Apps can also create a hotspot to share content with nearby devices.</string>
+    <string name="tethering_footer_info">Use hotspot and tethering to provide internet to other devices through your mobile data connection.Beaware that Apps can also create a hotspot to share content with nearby devices.</string>
     <!-- Tethering footer info for the device which supports Wi-Fi and Wi-Fi tethering enabled at the same time [CHAR LIMIT=NONE]-->
     <string name="tethering_footer_info_sta_ap_concurrency">Use hotspot and tethering to provide internet to other devices through your Wi\u2011Fi or mobile data connection. Apps can also create a hotspot to share content with nearby devices.</string>
 
@@ -4658,9 +4743,9 @@
     <!-- Main settings screen, setting summary for the user to go into the About phone screen-->
     <string name="about_settings_summary">View legal info, status, software version</string>
     <!-- About phone settings screen, setting option name to go to dialog that shows legal info -->
-    <string name="legal_information">Legal information</string>
+    <string name="legal_information">Open Source info</string>
     <!-- About phone settings screen, setting option name to see a list of contributors -->
-    <string name="contributors_title">Contributors</string>
+    <string name="contributors_title">Core Contributors info</string>
     <!-- About phone settings screen, setting option name to show Manual [CHAR LIMIT=25] -->
     <string name="manual">Manual</string>
     <!-- About phone settings screen, setting option name to show regulatory labels [CHAR LIMIT=25] -->
@@ -4683,7 +4768,7 @@
     <!-- About phone settings screen, setting option name to see licensing info for WebView component. [CHAR LIMIT=35] -->
     <string name="webview_license_title">System WebView License</string>
     <!-- About phone settings screen, setting option name to see wallpapers attributions -->
-    <string name="wallpaper_attributions">Wallpapers</string>
+    <string name="wallpaper_attributions">Backgrounds</string>
     <!-- About phone settings screen, setting option name to see wallpapers attributions values -->
     <string name="wallpaper_attributions_values">Satellite imagery providers:\n©2014 CNES / Astrium, DigitalGlobe, Bluesky</string>
 
@@ -4964,7 +5049,7 @@
     <!-- Applications settings screen heading. The header for the Application settings screen. -->
     <string name="applications_settings_header">App settings</string>
     <!-- Applications settings screen, setting check box title. If checked, the system allows installation of applications that are downloaded from random places, such as web sites.  -->
-    <string name="install_applications">Unknown sources</string>
+    <string name="install_applications">Danger</string>
     <!-- Applications settings screen, setting check box title. If checked, the system allows installation of applications that are downloaded from random places, such as web sites.  [CHAR LIMIT=30] -->
     <string name="install_applications_title">Allow all app sources</string>
     <!-- Category title listing recently used apps [CHAR_LIMIT=50]-->
@@ -5114,7 +5199,7 @@
     <string name="filter_dlg_title">Choose filter options</string>
     <!-- Text for filter option in ManageApps screen to display all installed
     applications -->
-    <string name="filter_apps_all">All apps</string>
+    <string name="filter_apps_all">All applications</string>
     <!-- [CHAR LIMIT=NONE] Text for filter option in ManageApps screen to display disabled apps -->
     <string name="filter_apps_disabled">Disabled apps</string>
     <!-- Text for filter option in ManageApps screen to display third party
@@ -5194,7 +5279,7 @@
     <!-- [CHAR LIMIT=30] Manage applications, label for option to disable app -->
     <string name="app_disable_dlg_positive">Disable app</string>
     <!-- [CHAR LIMIT=NONE] Manage applications, text for dialog when disabling apps -->
-    <string name="app_disable_dlg_text">If you disable this app, Android and other apps may no longer function as intended. Keep in mind, you can\u2019t delete this app since it came pre-installed on your device. By disabling, you turn this app off and hide it on your device.</string>
+    <string name="app_disable_dlg_text">If you disable this app, PepsiOs and other apps may no longer function as intended. Keep in mind, you can\u2019t delete this app since it came pre-installed on your device. By disabling, you turn this app off and hide it on your device.</string>
     <!-- [CHAR LIMIT=30] Manage applications, title for dialog when disabling notifications for an app -->
     <string name="app_disable_notifications_dlg_title">Turn off notifications?</string>
     <!-- Manage applications, individual application info screen, section heading for information about the app installer [CHAR_LIMIT=25] -->
@@ -7044,7 +7129,7 @@
     <!-- [CHAR LIMIT=NONE] Label for process stats, text for stats type -->
     <string name="process_stats_type_cached">Cached</string>
     <!-- [CHAR LIMIT=NONE] Label OS "process" app -->
-    <string name="process_stats_os_label">Android OS</string>
+    <string name="process_stats_os_label">PepsiOs OS</string>
     <!-- [CHAR LIMIT=NONE] Name of OS "process" for all native processes -->
     <string name="process_stats_os_native">Native</string>
     <!-- [CHAR LIMIT=NONE] Name of OS "process" for all kernel memory -->
@@ -7102,7 +7187,7 @@
     <!-- Title of voice search settings list item within voice input/output settings -->
     <string name="voice_search_settings_title">Voice search</string>
     <!-- Title of keyboard settings list item within voice input/output settings -->
-    <string name="keyboard_settings_title">Android keyboard</string>
+    <string name="keyboard_settings_title">PepsiOs keyboard</string>
 
     <!-- Voice input settings --><skip />
     <!-- [CHAR_LIMIT=NONE] Name of the settings item to open the voice input settings. -->
@@ -7480,11 +7565,11 @@
     <string name="cant_sync_dialog_message">Sync for this item is currently disabled. To change this setting, temporarily turn on background data and automatic sync.</string>
 
     <!-- This is displayed to the user when the device needs to be decrypted -->
-    <string name="enter_password">To start Android, enter your password</string>
+    <string name="enter_password">To start PepsiOs, enter your password</string>
     <!-- Informational text on the pin entry screen prompting the user for their pin -->
-    <string name="enter_pin">To start Android, enter your PIN</string>
+    <string name="enter_pin">To start PepsiOs, enter your PIN</string>
     <!-- Informational text on the pattern entry screen prompting the user for their pattern -->
-    <string name="enter_pattern">To start Android, draw your pattern</string>
+    <string name="enter_pattern">To start PepsiOs, draw your pattern</string>
 
     <!-- Message shown when user enters wrong pattern -->
     <string name="cryptkeeper_wrong_pattern">Wrong Pattern</string>
@@ -7496,7 +7581,7 @@
     <!-- Shown when a password has been entered, and we're checking it -->
     <string name="checking_decryption">Checking\u2026</string>
     <!-- Shown when password is correct, and we're starting Android -->
-    <string name="starting_android">Starting Android\u2026</string>
+    <string name="starting_android">Starting PepsiOs\u2026</string>
 
 
     <!-- the following are for Settings Storage screen -->
@@ -8523,7 +8608,7 @@
 
     <!--Dashboard strings-->
     <!-- Text to describe the dashboard fragment title [CHAR LIMIT=16] -->
-    <string name="dashboard_title">Settings</string>
+    <string name="dashboard_title">Home</string>
     <!-- Text to describe the items to be expanded as suggested settings [CHAR LIMIT=none] -->
     <plurals name="settings_suggestion_header_summary_hidden_items">
         <item quantity="one">Show %d hidden item</item>
@@ -8531,7 +8616,7 @@
     </plurals>
 
     <!-- Title for setting tile leading to network and Internet settings [CHAR LIMIT=40]-->
-    <string name="network_dashboard_title">Wi\u2011Fi &amp; Network</string>
+    <string name="network_dashboard_title">Network Connections</string>
     <!-- Summary for Network and Internet settings, explaining it contains mobile, wifi setting and data usage settings [CHAR LIMIT=NONE]-->
     <string name="network_dashboard_summary_mobile">SIM, mobile network, data usage, hotspot</string>
     <!-- Summary for Network and Internet settings, explaining it contains wifi and data usage setting [CHAR LIMIT=NONE]-->
@@ -8693,7 +8778,7 @@
     <string name="keywords_auto_rotate">camera, smart, auto rotate, auto-rotate, rotate, flip, rotation, portrait, landscape, orientation, vertical, horizontal</string>
 
     <!-- List of synonyms for the System Update (update the operating system) setting, used to match in settings search [CHAR LIMIT=NONE] -->
-    <string name="keywords_system_update_settings">upgrade, android</string>
+    <string name="keywords_system_update_settings">upgrade, PepsiOs</string>
 
     <!-- List of synonyms for the Do Not Disturb setting, used to match in settings search. Do Not Disturb turns of notification volume, notifications, vibrations, among other things on the device. [CHAR LIMIT=NONE] -->
     <string name="keywords_zen_mode_settings">dnd, schedule, notifications, block, silence, vibrate, sleep, work, focus, sound, mute, day, weekday, weekend, weeknight, event</string>
@@ -9904,13 +9989,13 @@
     <string name="loading_notification_apps">Loading apps\u2026</string>
 
     <!-- [CHAR LIMIT=NONE] Text appearing when app notifications are off -->
-    <string name="app_notifications_off_desc">At your request, Android is blocking this app\'s notifications from appearing on this device</string>
+    <string name="app_notifications_off_desc">At your request, PepsiOs is blocking this app\'s notifications from appearing on this device</string>
 
     <!-- [CHAR LIMIT=NONE] Text appearing when channel notifications are off -->
-    <string name="channel_notifications_off_desc">At your request, Android is blocking this category of notifications from appearing on this device</string>
+    <string name="channel_notifications_off_desc">At your request, PepsiOs is blocking this category of notifications from appearing on this device</string>
 
     <!-- [CHAR LIMIT=NONE] Text appearing when channel group notifications are off -->
-    <string name="channel_group_notifications_off_desc">At your request, Android is blocking this group of notifications from appearing on this device</string>
+    <string name="channel_group_notifications_off_desc">At your request, PepsiOs is blocking this group of notifications from appearing on this device</string>
 
     <!-- [CHAR LIMIT=NONE] App notification settings: channels title -->
     <string name="notification_channels">Categories</string>
@@ -10050,7 +10135,7 @@
     <string name="zen_mode_rule_type_unknown">Unknown</string>
 
     <!-- [CHAR LIMIT=NONE] Zen mode behavior settings footer: footer describing why the user cannot change the current do not disturb behavior settings -->
-    <string name="zen_mode_app_set_behavior">These settings can\'t be changed right now. An app (<xliff:g id="app_name" example="Android Services">%1$s</xliff:g>) has automatically turned on Do Not Disturb with custom behavior."</string>
+    <string name="zen_mode_app_set_behavior">These settings can\'t be changed right now. An app (<xliff:g id="app_name" example="PepsiOs Services">%1$s</xliff:g>) has automatically turned on Do Not Disturb with custom behavior."</string>
 
     <!-- [CHAR LIMIT=NONE] Zen mode behavior settings footer: footer describing why the user cannot change the current do not disturb behavior settings -->
     <string name="zen_mode_unknown_app_set_behavior">These settings can\'t be changed right now. An app has automatically turned on Do Not Disturb with custom behavior."</string>
@@ -12768,9 +12853,9 @@
     <string name="my_device_info_device_name_preference_title">Device name</string>
 
     <!-- Title for preference category showing the name of basic info. [CHAR LIMIT=60]-->
-    <string name="my_device_info_basic_info_category_title">Basic info</string>
+    <string name="my_device_info_basic_info_category_title">Its what I like</string>
     <!-- Title for preference category showing the name of legal & regulatory. [CHAR LIMIT=60]-->
-    <string name="my_device_info_legal_category_title">Legal &amp; regulatory</string>
+    <string name="my_device_info_legal_category_title">System Info</string>
     <!-- Title for preference category showing the name of device details. [CHAR LIMIT=60]-->
     <string name="my_device_info_device_details_category_title">Version information</string>
     <!-- Title for preference category showing the name of device identifiers. [CHAR LIMIT=60]-->
@@ -13501,7 +13586,7 @@
     <!-- Title of the 'Content Capture' feature toggle in the Settings -> Privacy screen [CHAR LIMIT=none]-->
     <string name="content_capture">App content</string>
     <!-- Description of the 'Content Capture' feature toggle in the Settings -> Privacy screen [CHAR LIMIT=NONE]-->
-    <string name="content_capture_summary">Allow apps to send content to the Android system</string>
+    <string name="content_capture_summary">Allow apps to send content to the PepsiOs system</string>
 
     <!-- Title for the button to initiate a heap dump for the system server. [CHAR LIMIT=NONE] -->
     <string name="capture_system_heap_dump_title">Capture system heap dump</string>
@@ -13512,7 +13597,7 @@
     <!-- Title of toggle for whether to enable automatic heap dumps for the system server or not. [CHAR LIMIT=NONE] -->
     <string name="automatic_system_heap_dump_title">Automatically capture system heap dumps</string>
     <!-- Summary of toggle for whether to enable automatic heap dumps for the system server or not. [CHAR LIMIT=NONE] -->
-    <string name="automatic_system_heap_dump_summary">Automatically capture a heap dump for Android System when it uses too much memory</string>
+    <string name="automatic_system_heap_dump_summary">Automatically capture a heap dump for PepsiOs System when it uses too much memory</string>
 
     <!-- Button label to disconnect a Wi-Fi network. [CHAR LIMIT=40] -->
     <string name="wifi_disconnect_button_text">Disconnect</string>
@@ -13817,7 +13902,7 @@
     <string name="reset_importance_completed">Reset notification importance completed.</string>
 
     <!-- Title for setting tile leading to Apps settings [CHAR LIMIT=40]-->
-    <string name="apps_dashboard_title">Applications</string>
+    <string name="apps_dashboard_title">Application settings</string>
 
     <!-- Bluetooth message permission alert for notification content [CHAR LIMIT=none] -->
     <string name="bluetooth_message_access_notification_content">A device wants to access your messages. Tap for details.</string>
@@ -13835,7 +13920,7 @@
     <!-- Brightness category name in Display Settings [CHAR LIMIT=none] -->
     <string name="category_name_brightness">Brightness</string>
     <!-- Lock screen category name in Display Settings [CHAR LIMIT=none] -->
-    <string name="category_name_lock_display">Lock display</string>
+    <string name="category_name_lock_display">Display settings</string>
     <!-- Appearance category name in Display Settings [CHAR LIMIT=none] -->
     <string name="category_name_appearance">Appearance</string>
     <!-- Color category name in Display Settings [CHAR LIMIT=none] -->
@@ -14001,5 +14086,78 @@
     <string name="auto_reboot_title">Secure Auto reboot</string>
     <string name="auto_reboot_summary">Automatically reboot the device, if the phone hasn\'t been unlocked within the selected number of hours.</string>
     <string name="deny_new_usb_summary">Control support for USB peripherals such as input (mice, keyboards, joysticks) and storage devices.</string>
+
+
+    <string name="title_activity_settings">Settings</string>
+    <string name="app_name">Atomic Hub</string>
+    <string name="themes">Themes</string>
+    <string name="status_bar">Status Bar</string>
+    <string name="ui">UI</string>
+    <string name="keys">Keys</string>
+    <string name="misc">Misc</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+
+
+    <!-- Card Names -->
+    <string name="UI_Title">My Device</string>
+    <string name="UI_Summary">Find out more about your device</string>
+    <string name="Theme_Title">Theme</string>
+    <string name="Theme_summary">Take your experience to next level by playing with colors !</string>
+    <string name="Status_Title">Status Bar</string>
+    <string name="Status_summary">Improve your interaction by placing essential items at your sight !</string>
+    <string name="Button_Title">Button</string>
+    <string name="Button_Summary">Yes There are lot of buttons ! Isn\'t it ?  check them here  !</string>
+    <string name="Misc_Title">Misc</string>
+    <string name="Misc_Summary">Still can’t find the one your looking for  check here !</string>
+    <string name="Team_Title">Team</string>
+    <string name="Team_summary">Spend time in knowing people behind this project !</string>
+    <string name="button">Buttons</string>
+    <string name="team">Team</string>
+    <string name="Homepage_atomic">Home</string>
+
+    
+    <string name="dot_dashboard_device">About phone</string>
+    <string name="dot_dashboard_account">Account</string>
+    <string name="dot_dashboard_network">Internet</string>
+    <string name="dot_dashboard_conectivity">Connectivity</string>    
+    <string name="dot_dashboard_display">Display</string>
+    <string name="dot_dashboard_battery">Battery</string>
+    <string name="dot_dashboard_sound">Sound</string>
+    <string name="dot_dashboard_apps">Apps</string>
+    <string name="dot_dashboard_notif">Notifications</string>
+    <string name="dot_dashboard_storage">Storage</string>
+    <string name="dot_dashboard_privacy">Privacy</string>    
+    <string name="dot_dashboard_location">Location</string>
+    <string name="dot_dashboard_security">Security</string>
+    <string name="dot_dashboard_accessibility">Accessibility</string>
+    <string name="dot_dashboard_system">Other</string>    
+    <string name="dot_dashboard_support">Support</string>
+
+    <!-- Dashboard categories -->
+    <string name="dot_dashboard_updates">System Updates</string>
+    <string name="dot_updates_status_updated">No new updates</string>
+    <string name="dot_updates_status_new">New update available</string>
+
+    <string name="top_level_connectivity">Connectivity</string>
+    <string name="top_level_personalize">Personalize</string>
+    <string name="top_level_security" translatable="false">@string/security_settings_title</string>
+    <string name="top_level_others">Others</string>
+
+    <!-- Dot Customizations -->
+    <string name="dot_customizer_dashboard_title">Customizations</string>
+    <string name="dot_customizer_dashboard_summary">Personalize your experience with a drop of paint</string>
 
 </resources>

@@ -15,8 +15,9 @@
 
         <com.android.settingslib.RestrictedPreference
             android:key="brightness"
-			android:icon="@drawable/ic_brightness_display"
+            android:icon="@drawable/rr_brightness_icon"
             android:title="@string/brightness"
+            android:layout="@layout/dot_pref_card_top"
             settings:keywords="@string/keywords_display_brightness_level"
             settings:useAdminDisabledSummary="true"
             settings:userRestriction="no_config_brightness" />
@@ -55,6 +56,7 @@
     <PreferenceCategory
         android:title="@string/category_name_appearance">
 
+        
         <com.android.settings.display.darkmode.DarkModePreference
             android:fragment="com.android.settings.display.darkmode.DarkModeSettingsFragment"
             android:key="dark_ui_mode"
@@ -83,16 +85,17 @@
         <!-- Font style -->
         <Preference
             android:key="android.theme.customization.fonts"
-            android:icon="@drawable/ic_theme_customization_font_title"            
             android:title="@string/theme_customization_font_title"
-            android:icon="@drawable/rr_custom_icon"
+            android:icon="@drawable/rr_ic_font_picker"
+        android:layout="@layout/dot_pref_card_mid"
             android:summary="@string/theme_customization_font_summary"
             android:fragment="com.android.settings.lineage.fragments.FontsPicker"/>
 
         <!-- Icon pack -->
         <Preference
             android:key="android.theme.customization.icon_pack"
-            android:icon="@drawable/ic_theme_customization_icon_pack_title"            
+            android:icon="@drawable/rr_style_icon"
+        android:layout="@layout/dot_pref_card_mid"
             android:title="@string/theme_customization_icon_pack_title"
             android:summary="@string/theme_customization_icon_pack_summary"
             android:fragment="com.android.settings.lineage.fragments.StatusbarIcons"/>
@@ -100,10 +103,22 @@
         <!-- Adaptive icon pack -->
         <Preference
             android:key="android.theme.customization.adaptive_icon_shape"
-            android:icon="@drawable/ic_theme_customization_icon_shape_title"           
+            android:icon="@drawable/rr_twist_icon"
+        android:layout="@layout/dot_pref_card_bot"
             android:title="@string/theme_customization_icon_shape_title"
             android:summary="@string/theme_customization_icon_shape_summary"
             android:fragment="com.android.settings.lineage.fragments.IconShapes"/>
+       
+       <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/ic_qs_panel"
+        android:summary="@string/quicktiles_summary"
+        android:title="@string/quicktiles_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.asdoi.quicksettings.SettingsActivity"
+            android:targetPackage="com.asdoi.quicktiles" />
+    </Preference>
 
     </PreferenceCategory>
 
@@ -128,6 +143,19 @@
 
     </PreferenceCategory>
 
+        <Preference
+        android:icon="@drawable/ic_system_update"
+        android:title="@string/custom_ui_toggle_title"
+        android:selectable="true"
+        android:fragment="com.android.settings.OrchidOs.fragments.Themes" />
+
+    </PreferenceCategory>
+<!--
+    <com.android.settings.display.DensityPreference
+        android:key="density"
+        android:icon="@drawable/rr_web_icon"
+        android:title="@string/developer_smallest_width" />
+-->
     <PreferenceCategory
         android:title="@string/category_name_display_controls">
 
@@ -148,8 +176,9 @@
 
         <ListPreference
             android:key="min_refresh_rate"
-            android:icon="@drawable/ic_refresh"            
+            android:icon="@drawable/ic_anatolia_themes"            
             android:title="@string/min_refresh_rate_title"
+         android:layout="@layout/dot_pref_card_mid"           
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.display.MinRefreshRatePreferenceController" />
 
@@ -162,7 +191,8 @@
 
         <SwitchPreference
             android:key="peak_refresh_rate"
-            android:icon="@drawable/ic_refresh"            
+            android:icon="@drawable/ic_anatolia_themes"  
+             android:layout="@layout/dot_pref_card_mid"
             android:title="@string/peak_refresh_rate_title"
             settings:controller="com.android.settings.display.PeakRefreshRatePreferenceController" />
 
@@ -180,9 +210,9 @@
 
         <Preference
             android:key="screensaver"
-			android:icon="@drawable/ic_screensaver_settings"            
             android:title="@string/screensaver_settings_title"
             android:fragment="com.android.settings.dream.DreamSettings"/>
+-->
 
         <SwitchPreference
             android:key="camera_gesture"
@@ -202,15 +232,17 @@
         <!-- Double tap to sleep -->
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="double_tap_sleep_gesture"
-			android:icon="@drawable/ic_taptosleep"            
+            android:icon="@drawable/ic_double_tap"
+                    android:layout="@layout/dot_pref_card_mid"
             android:title="@string/status_bar_double_tap_to_sleep_title"
             android:summary="@string/status_bar_double_tap_to_sleep_summary"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
         <com.android.settings.custom.preference.SystemSettingSwitchPreference
             android:key="wake_when_plugged_or_unplugged"
-			android:icon="@drawable/ic_wakeonplug_settings"            
             android:title="@string/wake_when_plugged_or_unplugged_title"
+            android:icon="@drawable/ic_wake_plug"
+                    android:layout="@layout/dot_pref_card_bot"
             android:summary="@string/wake_when_plugged_or_unplugged_summary"
             android:defaultValue="true"  />
 
@@ -239,11 +271,5 @@
             android:title="@string/display_vr_pref_title" />
 
     </PreferenceCategory>
-
-   <com.android.settingslib.widget.LayoutPreference        
-        android:key="sakura_settings"
-        android:layout="@layout/toplevel_bottom_animation"
-        android:selectable="true"
-        android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations"/>
 
 </PreferenceScreen>

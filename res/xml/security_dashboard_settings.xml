@@ -24,8 +24,9 @@
     <com.android.settingslib.widget.LayoutPreference
         android:key="security_animation"
         android:layout="@layout/security_animation"
-        android:order="-20" />
+        android:order="-20"/>
 
+        
     <!-- security_settings_status.xml 
     <PreferenceCategory
         android:order="-10"
@@ -62,27 +63,42 @@
             android:title="@string/security_settings_face_preference_title"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_face_settings" />
-        
+            
         <ListPreference
             android:key="deny_new_usb"
             android:icon="@drawable/ic_usb"           
             android:title="@string/deny_new_usb_title"
             android:summary="@string/deny_new_usb_summary"
             android:persistent="false"
+            android:layout="@layout/dot_pref_card_bot"
             android:entries="@array/deny_new_usb_entries"
             android:entryValues="@array/deny_new_usb_values" />
 
+
+    
         <com.android.settingslib.RestrictedPreference
             android:key="biometric_settings"
             android:title="@string/security_settings_biometric_preference_title"
             android:summary="@string/summary_placeholder"
             settings:keywords="@string/keywords_biometric_settings" />
+
+    <Preference
+        android:key="duress_settings"
+        android:icon="@drawable/ic_security_detection"
+        android:summary="@string/duress_summary"
+        android:title="@string/duress_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="me.lucky,duress.MainActivity"
+            android:targetPackage="me.lucky.duress" />
+    </Preference>
+
     </PreferenceCategory>
 
     <PreferenceCategory
         android:order="40"
         android:key="security_settings_device_admin_category"
-        android:layout="@layout/preference_category_no_label">
+	android:title="@string/manage_device_admin">
 
         <Preference
             android:key="manage_device_admin"
@@ -125,6 +141,7 @@
         android:icon="@drawable/ic_encryption_and_credential"
         android:title="@string/encryption_and_credential_settings_title"
         android:summary="@string/encryption_and_credential_settings_summary"
+        settings:shouldDisableView="true"
         android:fragment="com.android.settings.security.EncryptionAndCredential" />
 
     <Preference
@@ -192,5 +209,6 @@
             android:summary="@string/summary_placeholder" />
 
     </PreferenceCategory>
+
 
 </PreferenceScreen>

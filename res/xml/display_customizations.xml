@@ -17,31 +17,19 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:key="display_customizations"
-    android:title="@string/display_customization_title">
+    android:title="@string/powermenu_title3">
 
-    <PreferenceCategory
-        android:key="statusbar_category"
-        android:title="@string/statusbar_category_title">
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:layout="@layout/welcome_animation4"
+        android:order="-180" />
+        
+    <com.awaken.settings.preferences.SystemSettingListPreference
+            android:key="settings_dashboard_gms"
+            android:title="@string/settings_dashboard_style_title"
+            android:entries="@array/settings_dashboard_style_entries"
+            android:entryValues="@array/settings_dashboard_style_values"
+            android:summary="%s"
+            android:defaultValue="0" />
 
-        <!-- Statusbar Icon Manager -->
-        <Preference
-            android:key="systemui_tuner_statusbar"
-            android:title="@string/statusbar_items_title" >
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.StatusbarItemsActivity" />
-        </Preference>
-
-        <com.awaken.settings.preferences.SystemSettingSwitchPreference
-            android:key="show_fourg_icon"
-            android:title="@string/show_fourg_icon_title"
-            android:summary="@string/show_fourg_icon_summary"
-            android:defaultValue="false"/>
-
-        <com.awaken.settings.preferences.SystemSettingSwitchPreference
-            android:key="use_old_mobiletype"
-            android:title="@string/use_old_mobiletype_title"
-            android:summary="@string/use_old_mobiletype_summary"
-            android:defaultValue="true" />
-    </PreferenceCategory>
 </PreferenceScreen>

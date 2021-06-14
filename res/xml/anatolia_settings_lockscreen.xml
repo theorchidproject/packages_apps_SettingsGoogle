@@ -16,6 +16,27 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/lockscreen_title">
+	android:title="@string/core_system">
+
+    <com.epic.support.preferences.CustomSeekBarPreference
+        android:key="network_traffic_autohide_threshold"
+        android:title="@string/about_settings"
+        android:max="10"
+        settings:min="0"
+        settings:units="" />
+
+    <com.epic.support.preferences.SystemSettingSwitchPreference
+        android:key="network_traffic_arrow"
+        android:title="@string/about_settings"
+        android:summary="@string/about_settings"
+        android:defaultValue="true" />
+
+    <com.epic.support.preferences.CustomSeekBarPreference
+        android:key="network_traffic_font_size"
+        android:title="@string/about_settings"
+        android:max="60"
+        settings:min="21"
+        settings:defaultValue="42"
+        settings:units="dp" />
 
 </PreferenceScreen>

@@ -95,12 +95,6 @@
         settings:controller="com.android.settings.applications.appinfo.TimeSpentInAppPreferenceController" />
 
     <Preference
-        android:key="battery"
-        android:icon="@drawable/ic_battery_charging_full"
-        android:title="@string/power_usage_summary_title"
-        android:summary="@string/summary_placeholder" />
-
-    <Preference
         android:key="preferred_settings"
         android:title="@string/launch_by_default"
         android:summary="@string/summary_placeholder"
@@ -151,6 +145,10 @@
             settings:controller=
                 "com.android.settings.applications.appinfo.HibernationSwitchPreferenceController" />
     </PreferenceCategory>
+    <Preference
+        android:key="battery"
+        android:title="@string/power_usage_summary_title"
+        android:summary="@string/summary_placeholder" />
 
     <!-- Advanced apps settings -->
     <PreferenceCategory
@@ -176,13 +174,14 @@
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureDetailPreferenceController" />
 
-        <Preference
+     <Preference
             android:key="install_other_apps"
             android:visibility="invisible"
+            android:layout="@layout/dot_dashboard_preference_middle"
             android:title="@string/install_other_apps"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.appinfo.ExternalSourceDetailPreferenceController" />
-
+            
         <Preference
             android:key="interact_across_profiles"
             android:title="@string/interact_across_profiles_title"

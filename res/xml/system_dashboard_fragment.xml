@@ -22,8 +22,10 @@
 
     <com.android.settingslib.widget.LayoutPreference
         android:key="system_animation"
-        android:order="-500"
-        android:layout="@layout/system_animation" />
+        android:order="-400"
+        android:layout="@layout/system_animation" 
+        android:selectable="true"
+        android:fragment="com.epic.Anatolia"/>
 
     <Preference
         android:key="language_input_settings"
@@ -86,6 +88,7 @@
         settings:controller="com.android.settings.system.SystemUpdatePreferenceController">
         <intent android:action="android.settings.SYSTEM_UPDATE_SETTINGS"/>
     </Preference>
+         
 
     <Preference
         android:key="reset_dashboard"
@@ -94,4 +97,12 @@
         android:order="-30"
         android:fragment="com.android.settings.system.ResetDashboardFragment"
         settings:controller="com.android.settings.system.ResetPreferenceController"/>
+
+        <Preference
+        android:icon="@drawable/ic_system_update"
+        android:order="-40"
+        android:title="@string/powermenu_title3"
+        android:selectable="true"
+        android:fragment="com.android.settings.awaken.fragments.DisplayCustomizations" />
+
 </PreferenceScreen>

@@ -27,7 +27,7 @@
         android:layout_height="400dp"
         android:layout_gravity="center"
         android:clickable="false"
-        app:lottie_rawRes="@raw/anim_ui"
+        app:lottie_rawRes="@raw/wifi_settings"
         app:lottie_loop="true"
         app:lottie_autoPlay="true" />
 

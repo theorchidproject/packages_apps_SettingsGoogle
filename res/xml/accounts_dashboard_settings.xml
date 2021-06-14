@@ -57,6 +57,7 @@
 
     <SwitchPreference
         android:key="auto_sync_account_data"
+	android:layout="@layout/dot_dashboard_preference_top"
         android:title="@string/auto_sync_account_title"
         android:summary="@string/auto_sync_account_summary"
         android:order="202"
@@ -64,15 +65,41 @@
 
     <SwitchPreference
         android:key="auto_sync_work_account_data"
+	android:layout="@layout/dot_dashboard_preference_bottom"
         android:title="@string/account_settings_menu_auto_sync_work"
         android:summary="@string/auto_sync_account_summary"
         settings:forWork="true"
         android:order="203"/>
-
+        
     <SwitchPreference
         android:key="auto_sync_personal_account_data"
+	android:layout="@layout/dot_dashboard_preference_bottom"
         android:title="@string/account_settings_menu_auto_sync_personal"
+        android:icon="@drawable/ic_sync"
         android:summary="@string/auto_sync_account_summary"
         android:order="204"/>
 
+    <Preference
+        android:key="bitwarden_settings"        
+        android:summary="@string/bitwarden_summary"
+        android:title="@string/bitwarden_title"
+        android:icon="@drawable/ic_settings_privacy_aosp"
+        android:order="205">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="com.x8bit.bitwarden.MainActivity"
+            android:targetPackage="com.x8bit.bitwarden" />
+    </Preference>
+
+    <Preference
+        android:key="cloud_summary"
+         android:icon="@drawable/ic_storage"
+        android:summary="@string/cloud_summary"
+        android:title="@string/cloud_title"
+        android:order="206">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="ca.pkay.rcloneexplorer.MainActivity"
+            android:targetPackage="io.github.x0b.rcx" />
+    </Preference>
 </PreferenceScreen>

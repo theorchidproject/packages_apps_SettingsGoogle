@@ -28,7 +28,7 @@
 
     <!-- Remote volume group -->
     <PreferenceCategory
-		android:layout="@layout/card_top"
+		android:layout="@layout/dot_pref_card_top"
         android:key="remote_media_group"
         android:title=""
         android:order="-185"
@@ -38,16 +38,16 @@
 
     <!-- Media volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
-		android:layout="@layout/card_end"
         android:key="media_volume"
+        android:layout="@layout/dot_preference_top_card_progress"
         android:icon="@drawable/ic_media_stream"
         android:title="@string/media_volume_option_title"
         android:order="-180"
         settings:controller="com.android.settings.notification.MediaVolumePreferenceController"/>
 
     <!-- Media output switcher -->
-    <Preference
-		android:layout="@layout/card_top"
+ <Preference		
+        android:layout="@layout/dot_pref_card_mid"
         android:key="media_output"
         android:title="@string/media_output_title"
         android:dialogTitle="@string/media_output_title"
@@ -57,8 +57,8 @@
 
     <!-- Call volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
-		android:layout="@layout/card_mid"
         android:key="call_volume"
+        android:layout="@layout/dot_preference_middle_card_progress"
         android:icon="@drawable/ic_local_phone_24_lib"
         android:title="@string/call_volume_option_title"
         android:order="-170"
@@ -66,7 +66,7 @@
 
     <!-- Hands free profile output switcher -->
     <ListPreference
-		android:layout="@layout/card_end"
+		android:layout="@layout/dot_pref_card_bot"
         android:key="take_call_on_output"
         android:title="@string/take_call_on_title"
         android:dialogTitle="@string/take_call_on_title"
@@ -76,18 +76,16 @@
 
     <!-- Ring volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
-		android:layout="@layout/card_top"
         android:key="ring_volume"
         android:icon="@drawable/ic_notifications"
         android:title="@string/ring_volume_option_title"
         android:order="-160"
         settings:controller="com.android.settings.notification.RingVolumePreferenceController"/>
 
-
     <!-- Alarm volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
-		android:layout="@layout/card_end"
         android:key="alarm_volume"
+        android:layout="@layout/dot_preference_middle_card_progress"
         android:icon="@*android:drawable/ic_audio_alarm"
         android:title="@string/alarm_volume_option_title"
         android:order="-150"
@@ -95,7 +93,7 @@
 
     <!-- Notification volume -->
     <com.android.settings.notification.VolumeSeekBarPreference
-		android:layout="@layout/card_top"
+        android:layout="@layout/dot_preference_bottom_card_progress"
         android:key="notification_volume"
         android:icon="@drawable/ic_notifications"
         android:title="@string/notification_volume_option_title"
@@ -105,7 +103,6 @@
     <!-- TODO(b/174964721): make this a PrimarySwitchPreference -->
     <!-- Interruptions -->
     <com.android.settingslib.RestrictedPreference
-		android:layout="@layout/card_top"
         android:key="zen_mode"
         android:title="@string/zen_mode_settings_title"
         android:icon="@drawable/ic_do_not_disturb2"
@@ -117,7 +114,6 @@
 
     <!-- Phone ringtone -->
     <com.android.settings.DefaultRingtonePreference
-		android:layout="@layout/card_end"
         android:key="phone_ringtone"
         android:icon="@drawable/rr_call_vol_icon"
         android:title="@string/ringtone_title"
@@ -139,7 +135,6 @@
 
     <!-- Live Caption -110 and Now Playing -105-->
     <Preference
-		android:layout="@layout/card_top"
         android:key="media_controls_summary"
         android:icon="@drawable/ic_settings_headset"
         android:title="@string/media_controls_title"
@@ -150,7 +145,6 @@
 
     <!-- Also vibrate for calls -->
     <Preference
-		android:layout="@layout/card_end"
         android:fragment="com.android.settings.sound.VibrateForCallsPreferenceFragment"
         android:icon="@drawable/ic_vibrate"
         android:key="vibrate_for_calls"
@@ -159,29 +153,10 @@
         settings:controller="com.android.settings.sound.VibrateForCallsPreferenceController"
         settings:keywords="@string/keywords_vibrate_for_calls"/>
 
-    <com.android.settings.widget.PrimarySwitchPreference
-		android:layout="@layout/card_top"
-        android:key="gesture_prevent_ringing_sound"
-		android:icon="@drawable/rr_misc_ui_icon"
-        android:title="@string/gesture_prevent_ringing_sound_title"
-        android:order="-80"
-        android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
-        settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController"/>
 
-    <!-- Default notification ringtone -->
-    <com.android.settings.DefaultRingtonePreference
-		android:layout="@layout/card_end"
-        android:key="notification_ringtone"
-        android:icon="@drawable/ic_sms_ringtone"
-        android:title="@string/notification_ringtone_title"
-        android:dialogTitle="@string/notification_ringtone_title"
-        android:summary="@string/summary_placeholder"
-        android:ringtoneType="notification"
-        android:order="-70"/>
 
     <!-- Default alarm ringtone -->
     <com.android.settings.DefaultRingtonePreference
-		    android:layout="@layout/card_top"
         android:key="alarm_ringtone"
         android:icon="@drawable/ic_audio_alarm"
         android:title="@string/alarm_ringtone_title"
@@ -189,7 +164,36 @@
         android:summary="@string/summary_placeholder"
         android:persistent="false"
         android:ringtoneType="alarm"
-        android:order="-60"/>
+        android:order="-85"/>
+
+
+    <!-- Default notification ringtone -->
+    <com.android.settings.DefaultRingtonePreference
+        android:key="notification_ringtone"
+        android:icon="@drawable/ic_sms_ringtone"
+        android:title="@string/notification_ringtone_title"
+        android:dialogTitle="@string/notification_ringtone_title"
+        android:summary="@string/summary_placeholder"
+        android:ringtoneType="notification"
+        android:order="-75"/>
+
+
+    <!-- Charging sounds -->
+    <SwitchPreference
+        android:key="charging_sounds"
+        android:icon="@drawable/rr_sound_icon"
+        android:title="@string/charging_sounds_title"
+        android:order="-70"/>
+        
+
+    <com.android.settings.widget.PrimarySwitchPreference
+    	android:layout="@layout/card_top"
+        android:key="gesture_prevent_ringing_sound"
+		android:icon="@drawable/rr_misc_ui_icon"
+        android:title="@string/gesture_prevent_ringing_sound_title"
+        android:order="-60"
+        android:fragment="com.android.settings.gestures.PreventRingingGestureSettings"
+        settings:controller="com.android.settings.gestures.PreventRingingParentPreferenceController"/>
 
     <!-- Spatial audio -->
     <SwitchPreference
@@ -201,76 +205,71 @@
 
     <!-- Dial pad tones -->
     <SwitchPreference
-		android:layout="@layout/card_top"
-    		android:icon="@drawable/ic_dialpad"
+		android:layout="@layout/card_mid"
+    		android:icon="@drawable/rr_sound_two_icon"
         android:key="dial_pad_tones"
         android:title="@string/dial_pad_tones_title"
         android:order="-50"/>
 
+    <!-- Screenshot sound -->
+    <SwitchPreference
+        android:key="screenshot_shutter_sound"		
+       	android:icon="@drawable/ic_screenshot"
+        android:order="45"
+        android:title="@string/screenshot_shutter_sound_title" />
+
     <!-- Screen locking sounds -->
     <SwitchPreference
-		android:layout="@layout/card_end"
-		android:icon="@drawable/ic_screenlock"
+		android:icon="@drawable/rr_lock_icon"
         android:key="screen_locking_sounds"
         android:title="@string/screen_locking_sounds_title"
-        android:order="-45"/>
-
-    <!-- Charging sounds -->
-    <SwitchPreference
-		android:layout="@layout/card_top"
-        android:key="charging_sounds"
-        android:icon="@drawable/rr_sound_icon"
-        android:title="@string/charging_sounds_title"
         android:order="-40"/>
 
     <!-- Docking sounds -->
     <SwitchPreference
         android:key="docking_sounds"
+     android:layout="@layout/dot_pref_card_mid"
         android:title="@string/docking_sounds_title"
-        android:order="-35"/>
+        android:order="-25"/>
 
     <!-- Touch sounds -->
     <SwitchPreference
-    		android:icon="@drawable/rr_media_icon"
+    	android:icon="@drawable/rr_media_icon"
         android:key="touch_sounds"
         android:title="@string/touch_sounds_title"
-        android:order="-30"/>
+        android:order="-20"/>
 
     <!-- Vibrate on touch -->
     <SwitchPreference
         android:key="vibrate_on_touch"
       	android:icon="@drawable/rr_vibration_icon"
         android:title="@string/vibrate_on_touch_title"
+         android:layout="@layout/dot_pref_card_mid" 		   		       
         android:summary="@string/vibrate_on_touch_summary"
         settings:keywords="@string/keywords_vibrate_on_touch"
-        android:order="-25"/>
+        android:order="-15"/>
 
     <!-- Dock speaker plays -->
     <ListPreference
         android:key="dock_audio_media"
         android:title="@string/dock_audio_media_title"
+         android:layout="@layout/dot_pref_card_mid" 		   		       
         android:summary="%s"
-        android:order="-20"/>
+        android:order="-10"/>
 
     <!-- Boot sounds -->
     <SwitchPreference
-		android:layout="@layout/card_top"
         android:key="boot_sounds"
         android:title="@string/boot_sounds_title"
-        android:order="-15"/>
+        android:order="-5"/>
 
     <!-- Emergency tone -->
     <ListPreference
         android:key="emergency_tone"
+   		android:layout="@layout/dot_pref_card_mid"    
         android:title="@string/emergency_tone_title"
         android:summary="%s"
-        android:order="-10"/>
-
-    <!-- Screenshot sound -->
-    <SwitchPreference
-        android:key="screenshot_shutter_sound"
-       	android:icon="@drawable/ic_screenshot_sound"
-        android:title="@string/screenshot_shutter_sound_title" />
+        android:order="35"/>
 
     <Preference
         android:key="sound_work_settings"
@@ -279,11 +278,5 @@
         android:order="100"
         settings:controller="com.android.settings.notification.WorkSoundsPreferenceController"/>
 
-
-    <com.android.settingslib.widget.LayoutPreference        
-        android:key="sakura_settings"
-        android:layout="@layout/toplevel_bottom_animation"
-        android:selectable="true"
-        android:fragment="com.arcana.grimoire.fragments.Themes" />
 
 </PreferenceScreen>

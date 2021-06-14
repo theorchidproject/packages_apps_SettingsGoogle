@@ -16,6 +16,11 @@
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
-	android:title="@string/extras_title">
+android:title="@string/powermenu_title3">
 
+     <com.android.settingslib.widget.LayoutPreference
+        android:key="welcome_animation"
+        android:layout="@layout/welcome_animation2"
+        android:order="-180" />
+            
 </PreferenceScreen>
