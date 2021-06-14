@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2021 The Android Open Source Project
+<!--
+     Copyright (C) 2022 The Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -13,14 +14,13 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-
-<inset xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape android:shape="rectangle">
-        <corners
-            android:topLeftRadius="@dimen/settings_panel_corner_radius"
-            android:topRightRadius="@dimen/settings_panel_corner_radius"
-            android:bottomLeftRadius="0dp"
-            android:bottomRightRadius="0dp"/>
-        <solid android:color="@*android:color/primary_device_default_light" />
-    </shape>
-</inset>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24"
+    android:tint="?attr/colorControlNormal">
+  <path
+      android:fillColor="@android:color/white"
+      android:pathData="M9.55,18 L3.85,12.3 5.275,10.875 9.55,15.15 18.725,5.975 20.15,7.4Z"/>
+</vector>
