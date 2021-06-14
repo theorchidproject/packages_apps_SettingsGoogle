@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
+    android:title="@string/ui" >
+
+    <com.android.settings.widget.HomepagePreference
+		android:layout="@layout/card_mid"
+        android:fragment="com.android.settings.privacy.PrivacyDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_privacy_settings"
+        android:key="top_level_privacy"
+        android:order="-40"
+        android:title="@string/privacy_dashboard_title"
+        android:summary="@string/privacy_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_privacy"/>
+
+    <com.android.settings.widget.HomepagePreference
+		android:layout="@layout/card_mid"
+        android:fragment="com.android.settings.location.LocationSettings"
+        android:icon="@drawable/op_ic_homepage_location_settings"
+        android:key="top_level_location"
+        android:order="-30"
+        android:title="@string/location_settings_title"
+        android:summary="@string/location_settings_loading_app_permission_stats"
+        settings:highlightableMenuKey="@string/menu_key_location"
+        settings:controller="com.android.settings.location.TopLevelLocationPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+		android:layout="@layout/card_mid"
+        android:key="top_level_emergency"
+        android:title="@string/emergency_settings_preference_title"
+        android:summary="@string/emergency_dashboard_summary"
+        android:icon="@drawable/op_ic_homepage_about_emergency"
+        android:order="-20"
+        android:fragment="com.android.settings.emergency.EmergencyDashboardFragment"
+        settings:highlightableMenuKey="@string/menu_key_emergency"/>
+
+    <com.android.settings.widget.HomepagePreference
+		android:layout="@layout/card_end"
+        android:fragment="com.android.settings.accounts.AccountDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_accounts_settings"
+        android:key="top_level_accounts"
+        android:order="-10"
+        android:title="@string/account_dashboard_title"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_accounts"
+        settings:controller="com.android.settings.accounts.TopLevelAccountEntryPreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+		android:layout="@layout/card_top"
+        android:fragment="com.android.settings.system.SystemDashboardFragment"
+        android:icon="@drawable/op_ic_homepage_system_dashboard_settings"
+        android:key="top_level_system"
+        android:order="10"
+        android:title="@string/header_category_system"
+        android:summary="@string/system_dashboard_summary"
+        settings:highlightableMenuKey="@string/menu_key_system"/>
+
+    <com.android.settings.widget.HomepagePreference
+		android:layout="@layout/card_end"
+        android:fragment="com.android.settings.deviceinfo.aboutphone.MyDeviceInfoFragment"
+        android:icon="@drawable/op_ic_homepage_about_settings"
+        android:key="top_level_about_device"
+        android:order="20"
+        android:title="@string/about_settings"
+        android:summary="@string/summary_placeholder"
+        settings:highlightableMenuKey="@string/menu_key_about_device"
+        settings:controller="com.android.settings.deviceinfo.aboutphone.TopLevelAboutDevicePreferenceController"/>
+
+    <com.android.settings.widget.HomepagePreference
+        android:icon="@drawable/op_ic_homepage_support_settings"
+        android:key="top_level_support"
+        android:order="100"
+        android:title="@string/page_tab_title_support"
+        android:summary="@string/support_summary"
+        settings:highlightableMenuKey="@string/menu_key_support"
+        settings:controller="com.android.settings.support.SupportPreferenceController"/>
+
+
+
+   <com.android.settingslib.widget.LayoutPreference        
+        android:key="sakura_settings"
+        android:layout="@layout/toplevel_bottom_animation"
+        android:selectable="true"
+        android:order="54"
+        android:fragment="com.sakura.settings.SakuraSettings"/>
+
+</PreferenceScreen>

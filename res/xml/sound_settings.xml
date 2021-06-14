@@ -46,8 +46,8 @@
         settings:controller="com.android.settings.notification.MediaVolumePreferenceController"/>
 
     <!-- Media output switcher -->
- <Preference		
-        android:layout="@layout/dot_pref_card_mid"
+    <com.OrchidOs.settings.preferences.CardviewPreference
+		android:layout="@layout/card_top"
         android:key="media_output"
         android:title="@string/media_output_title"
         android:dialogTitle="@string/media_output_title"
@@ -152,7 +152,6 @@
         android:order="-90"
         settings:controller="com.android.settings.sound.VibrateForCallsPreferenceController"
         settings:keywords="@string/keywords_vibrate_for_calls"/>
-
 
 
     <!-- Default alarm ringtone -->

@@ -74,7 +74,16 @@
             android:entries="@array/deny_new_usb_entries"
             android:entryValues="@array/deny_new_usb_values" />
 
-
+    <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/rr_web_icon"
+        android:summary="@string/webapp_summary"
+        android:title="@string/Allwayson_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="io.github.domi04151309.alwayson.activities.SplashActivity"
+            android:targetPackage="io.github.domi04151309.alwayson" />
+    </Preference>
     
         <com.android.settingslib.RestrictedPreference
             android:key="biometric_settings"

@@ -29,12 +29,28 @@
         android:title="@string/core_system">
         <intent android:action="android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS" />
     </Preference>
+<!--
+         <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/rr_web_icon"
+        android:summary="@string/webapp_summary"
+        android:title="@string/secure_webapps_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.brairproject.brair.android.navdrawer.NavDrawerActivity"
+            android:targetPackage="org.brairproject.brair.android" />
+    </Preference>
+-->
+    <Preference
+        android:key="tap_tap_gestures"
+        android:icon="@drawable/rr_web_icon"
+        android:summary="@string/webapp_summary"
+        android:title="@string/secure_webapps_title">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetClass="org.jak_linux.dns66.MainActivity"
+            android:targetPackage="org.jak_linux.dns66" />
+    </Preference>
 
-
-   <com.android.settingslib.widget.LayoutPreference        
-        android:key="sakura_settings"
-        android:layout="@layout/toplevel_bottom_animation"
-        android:selectable="false"
-        android:order="54" />
 
 </PreferenceScreen>
