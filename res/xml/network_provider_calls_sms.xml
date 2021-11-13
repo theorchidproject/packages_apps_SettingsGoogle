@@ -5,6 +5,10 @@
     android:key="provider_model_calls_and_sms_screen"
     android:title="@string/calls_and_sms">
 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="call_sms_animation"
+        android:layout="@layout/call_sms_animation" />
+
     <ListPreference
         android:icon="@drawable/ic_phone"
         android:key="provider_model_calls_preference"
@@ -22,22 +26,22 @@
     <PreferenceCategory
         android:key="provider_model_calling_category"
         android:order="20"
-        android:title="@string/calls_and_sms_category"
-        settings:allowDividerAbove="true"
-        settings:controller="com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController" />
+        settings:controller="com.android.settings.network.telephony.NetworkProviderWifiCallingPreferenceController"
+        settings:allowDividerAbove="false"
+        />
 
     <PreferenceCategory
         android:key="provider_model_backup_calling_category"
         android:order="25"
         android:title="@string/backup_calling_settings_title"
-        settings:allowDividerAbove="true"
+        settings:allowDividerAbove="false"
         settings:controller="com.android.settings.network.telephony.NetworkProviderBackupCallingPreferenceController" />
 
     <PreferenceCategory
         android:key="connectivity_helper_call_quality_category"
         android:order="30"
         android:title="@string/connectivity_helper_call_quality_category"
-        settings:allowDividerAbove="true">
+        settings:allowDividerAbove="false">
 
         <SwitchPreference
             android:icon="@drawable/ic_connectivity_helper_call_quality"
