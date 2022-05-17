@@ -149,7 +149,7 @@
 
     <!-- Homepage title -->
     <dimen name="homepage_title_margin_bottom">8dp</dimen>
-    <dimen name="homepage_title_margin_horizontal">24dp</dimen>
+    <dimen name="homepage_title_margin_horizontal">20dp</dimen>
 
     <!-- Homepage menu entry -->
     <dimen name="homepage_menu_entry_padding_horizontal">16dp</dimen>
