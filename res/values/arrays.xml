@@ -124,6 +124,18 @@
         <item>30 minutes</item>
     </string-array>
 
+    <string-array name="connectivity_check_entries">
+        <item>GrapheneOS</item>
+        <item>Standard (Google)</item>
+        <item>Disabled</item>
+    </string-array>
+
+    <string-array name="connectivity_check_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
     <!-- Do not translate. -->
     <string-array name="lock_after_timeout_values" translatable="false">
         <!-- Do not translate. -->
@@ -1180,14 +1192,14 @@
     </string-array>
 
     <!-- Array of color for sim color for multi-sim in light mode -->
-    <integer-array name="sim_color_light">
+    <string-array name="sim_color_light">
         <item>@color/SIM_color_cyan</item>
         <item>@color/SIM_color_blue800</item>
         <item>@color/SIM_color_green800</item>
         <item>@color/SIM_color_purple800</item>
         <item>@color/SIM_color_pink800</item>
         <item>@color/SIM_color_orange</item>
-    </integer-array>
+    </string-array>
 
     <!-- Array of titles for sim color for multi-sim -->
     <string-array name="color_picker">
@@ -1338,6 +1350,9 @@
         <item>4</item> <!-- AutofillManager.FLAG_ADD_CLIENT_VERBOSE -->
     </string-array>
 
+    <!-- Note: The LTE only option is added in code, not here. Also, these enabled_networks_choices
+         and enabled_networks_4g_choices string arrays are just placeholders for
+         mobile_network_settings.xml -->
     <string-array name="enabled_networks_choices" translatable="false">
         <item>@string/network_lte</item>
         <item>@string/network_3G</item>
@@ -1427,7 +1442,7 @@
         <item>CDMA + LTE/EvDo</item>
         <item>GSM/WCDMA/LTE</item>
         <item>LTE/CDMA/EvDo/GSM/WCDMA</item>
-        <item>LTE</item>
+        <item>LTE Only</item>
         <item>LTE / WCDMA</item>
         <item>TDSCDMA only</item>
         <item>TDSCDMA/WCDMA</item>

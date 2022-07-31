@@ -6,6 +6,12 @@
     android:persistent="false"
     android:title="@string/accessibility_settings">
 
+
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="accesibility_animation"
+        android:layout="@layout/accessibility_animation"
+        android:order="-999"/>
+
     <PreferenceCategory
         android:key="user_installed_services_category"
         android:persistent="false"

@@ -18,58 +18,30 @@
 <PreferenceScreen
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:settings="http://schemas.android.com/apk/res-auto"
-    android:title="@string/firmware_version"
+    android:title="@string/about_device_info"
     settings:keywords="@string/keywords_android_version">
 
-    <!-- Android version -->
-    <Preference
-        android:key="os_firmware_version"
-        android:title="@string/firmware_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:searchable="false"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.FirmwareVersionDetailPreferenceController"/>
+    <!-- orchidosrom grid -->
+<PreferenceScreen
+    android:key="orchidosrom_grid"
+    android:enabled="false"
+    android:layout="@layout/orchidosrom_grid"/>
 
-    <!-- Security patch -->
-    <Preference
-        android:key="security_key"
-        android:title="@string/security_patch"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SecurityPatchLevelPreferenceController"/>
-
-    <!-- Mainline module version -->
-    <Preference
-        android:key="module_version"
-        android:title="@string/module_version"
-        android:summary="@string/summary_placeholder"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
-
-    <!-- Baseband -->
-    <Preference
-        android:key="base_band"
-        android:title="@string/baseband_version"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.BasebandVersionPreferenceController"/>
-
-    <!-- Kernel -->
-    <Preference
-        android:key="kernel_version"
-        android:title="@string/kernel_version"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.KernelVersionPreferenceController"/>
-
-    <!-- Build -->
-    <Preference
-        android:key="os_build_number"
-        android:title="@string/build_number"
-        android:summary="@string/summary_placeholder"
-        android:selectable="false"
-        settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.SimpleBuildNumberPreferenceController"/>
-
+      <com.android.settingslib.widget.LayoutPreference
+        android:key="pepsi_animation"
+        android:layout="@layout/pepsi_animation"
+		android:selectable="true"
+		settings:controller="com.android.settings.deviceinfo.firmwareversion.ElixirLogoPreferenceController"/>
+	
+    <!-- OrchidOsOS info 
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="OrchidOs_info"
+        android:layout="@layout/OrchidOs_info"
+        android:selectable="false" />
+		
+    <com.android.settingslib.widget.LayoutPreference
+        android:key="arcana_info"
+        android:layout="@layout/arcana_info"
+        android:selectable="false" /> -->
+		
 </PreferenceScreen>
