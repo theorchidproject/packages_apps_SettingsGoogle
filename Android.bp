@@ -44,11 +44,16 @@ android_library {
         "SettingsLib-search-defaults",
     ],
 
-    srcs: ["src/**/*.java"],
-    resource_dirs: [
-        "res",
-        "res-pixel",
-        "TouchGestures/res"
+    srcs: ["src/**/*.java", "src/**/*.kt",
+           "SakuraSettings/src/**/*.java",
+    ],
+
+    aaptflags: ["--extra-packages com.sakura.settings"],
+
+    resource_dirs: ["res",
+                    "SakuraSettings/res"
+                     "res-pixel",
+                    "TouchGestures/res"
     ],
 
     static_libs: [
@@ -59,8 +64,13 @@ android_library {
         "androidx.core_core",
         "androidx.appcompat_appcompat",
         "androidx.cardview_cardview",
+        "androidx.leanback_leanback",
+        "androidx.legacy_legacy-preference-v14",
+        "androidx.legacy_legacy-support-v4",
+        "androidx.palette_palette",
         "androidx.preference_preference",
         "androidx.recyclerview_recyclerview",
+        "androidx.viewpager2_viewpager2",
         "com.google.android.material_material",
         "setupcompat",
         "setupdesign",
