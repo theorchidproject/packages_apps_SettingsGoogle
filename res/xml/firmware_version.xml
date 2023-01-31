@@ -27,21 +27,10 @@
     android:enabled="false"
     android:layout="@layout/orchidosrom_grid"/>
 
-      <com.android.settingslib.widget.LayoutPreference
-        android:key="pepsi_animation"
-        android:layout="@layout/pepsi_animation"
+  <com.android.settingslib.widget.LayoutPreference
+    android:key="pepsi_animation"
+    android:layout="@layout/pepsi_animation"
 		android:selectable="true"
 		settings:controller="com.android.settings.deviceinfo.firmwareversion.ElixirLogoPreferenceController"/>
 	
-    <!-- OrchidOsOS info 
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="OrchidOs_info"
-        android:layout="@layout/OrchidOs_info"
-        android:selectable="false" />
-		
-    <com.android.settingslib.widget.LayoutPreference
-        android:key="arcana_info"
-        android:layout="@layout/arcana_info"
-        android:selectable="false" /> -->
-		
 </PreferenceScreen>
